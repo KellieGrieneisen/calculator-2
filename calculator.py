@@ -24,7 +24,7 @@ while True:
     else:
         num2 = int(tokens[2]) 
 
-    if calc =='q':
+    if 'q' in tokens:
         break
     #print(tokens)
     elif calc == '+' or calc == 'add':
@@ -49,9 +49,17 @@ while True:
         squared = square(float(num1))
         print(squared)
     elif calc == 'cube':
-        #call square function on token[1] and token[2]
+        #call cube function on token[1] and token[2]
         cubed = cube(float(num1))
         print(cubed)
+    elif calc == 'power':
+        #call power function on token[1] and token[2]
+        powered = power(float(num1), float(num2))
+        print(powered)
+    elif calc == 'mod':
+        #call mod function on token[1] and token[2]
+        mode = mod(float(num1), float(num2))
+        print(mode)
 
 
     
