@@ -16,13 +16,21 @@ while True:
     tokens = equation.split(' ')
     
 #         if the first token is "q":
-    first = tokens[0]
-    print(first)
-    if first =='q':
+    calc = tokens[0]
+    num1 = int(tokens[1])
+    num2 = int(tokens[2])
+    if calc =='q':
         break
-    print(tokens)
+    #print(tokens)
+    elif calc == '+' or calc == 'add':
+        #call add function on token[1] and token[2]
+        addition = add(float(num1), float(num2))
+        print(addition)
+        #print output of add function
 
-#             quit
+
+
+    
 #         else:
 #             (decide which math function to call based on first token)
 #             if the first token is 'pow':
